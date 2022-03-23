@@ -1,0 +1,56 @@
+@use '../core/' as *;
+
+.rate {
+    margin: {
+        top: 2.666666666666667rem; // 40px
+        bottom: 2.666666666666667rem; // 40px
+        right: 0;
+        left: 0;
+    };
+    @media (min-width: 991px) {
+        flex: 1;
+    }
+    .rate-box {
+        @include flex(null, null, null, wrap);
+        position: relative;
+        background-color: $neutral-gray-magenta-400;
+        padding: 1rem; // 15px
+        margin-bottom: 1.666666666666667rem; // 25px
+        border-radius: 0.6666666666666667rem; // 10px
+        @media (min-width: 991px) {
+            max-width: 33.33333333333333rem; // 500px
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            &:first-of-type {
+                margin-left: 1.333333333333333rem; // 20px
+            }
+            &:nth-child(2) {
+                margin-left: 4.666666666666667rem; // 70px
+            }
+            &:last-of-type {
+                margin-left: 8rem; // 120px
+            }
+            align-items: center;
+        }
+        
+    }
+    ul.stars {
+        width: 100%;
+        margin-bottom: 0.3333333333333333rem; // 5px
+        gap: 0.6666666666666667rem; // 10px
+        @include flex(center, center, null, wrap);
+        @media (min-width: 991px) {
+            width: auto;
+            margin-bottom: 0;
+            align-items: center;
+        }
+    }
+    p.rating-description {
+        width: 100%;
+        color: $primary-magenta-900;
+        font-weight: 900;
+        @media (min-width: 991px) {
+            width: auto;
+        }
+    }
+}

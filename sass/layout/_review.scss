@@ -1,0 +1,50 @@
+@use '../core/' as *;
+
+.review {
+    @media (min-width: 991px) {
+        @include flex(space-between);
+        height: 26.66666666666667rem; // 400 px
+    }
+    .review-box {
+        background-color: $primary-magenta-900;
+        padding: 2.133333333333333rem; // 32px
+        margin-bottom: 1.333333333333333rem; // 20px
+        border-radius: 0.6666666666666667rem; // 10px
+        @media (min-width: 991px) {
+            flex-basis: calc(95% / 3);
+            height: 258px;
+            &:first-of-type {
+                margin-top: 1.333333333333333rem; // 20px
+            }
+            &:nth-child(2) {
+                margin-top: 2.666666666666667rem; // 40px
+            }
+            &:last-of-type {
+                margin-top: 4rem; // 60px
+            }
+        }
+    }
+    .review-header {
+        margin-bottom: 1.333333333333333rem;
+        @include flex(null, center);
+        img {
+            border-radius: 50%;
+            width: 2.666666666666667rem; // 40px
+            margin-right: 1.333333333333333rem;
+        }
+        .buyer-name {
+            color: $neutral-gray-magenta-400;
+            margin-bottom: 0.3333333333333333rem; // 5px
+            font-weight: 500;
+        }
+        .buyer-tier {
+            color: transparentize($primary-pink-400, 0.5) ;
+        }
+    }
+    .review-description {
+        color: $neutral-gray-magenta-400;
+        font-weight: 400;
+        font-size: 0.9rem;
+        line-height: 1.7;
+    }
+}

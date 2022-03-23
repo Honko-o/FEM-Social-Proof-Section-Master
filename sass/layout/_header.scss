@@ -1,0 +1,69 @@
+@use '../core/' as *;
+
+// SVG Start
+main {
+    position: relative;
+    .svg-pattern-top-mobile,
+    .svg-pattern-top-computer {
+        position: absolute;
+        top: -5.333333333333333rem; // -80px
+    }
+    .svg-pattern-bottom-mobile,
+    .svg-pattern-bottom-computer {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    // Hide Computer Background For Small Screen size.
+    .svg-pattern-top-computer,
+    .svg-pattern-bottom-computer {
+        @media (max-width: 990px) {
+            display: none;
+        }
+    }
+    // Hide Mobile Background For Medium Screen size and Above.
+    .svg-pattern-top-mobile {
+        @media (min-width: 991px) {
+            display: none;
+        }
+    }
+    .svg-pattern-bottom-mobile {
+        @media (min-width: 991px) {
+            display: none;
+        }
+    }
+}
+// SVG End
+// Start Header
+.social-proof-section {
+    margin: {
+        top: 5.333333333333333rem; // 80px
+        right: 1rem; // 15px
+        left: 1rem; // 15px
+    };
+    .wrapper {
+        text-align: center;
+        @media (min-width: 991px) {
+            display: flex;
+        }
+    }
+    .social-proof-header {
+        color: $primary-magenta-900;
+        @media (min-width: 991px) {
+            flex-basis: 40%;
+            text-align: left;
+        }
+    }
+    .social-proof-title {
+        font-size: 2.3rem;
+        @media (min-width: 991px) {
+            font-size: 2.5rem;
+        }
+    }
+    .social-proof-description {
+        color: $neutral-gray-magenta-900;
+        line-height: 1.6;
+        font-weight: 500;
+    }
+}
+// End Header

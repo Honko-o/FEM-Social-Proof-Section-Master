@@ -1,0 +1,8 @@
+@use './variables' as *;
+
+body {
+    font-size: $root-font-size;
+    font-family: 'Spartan', sans-serif;
+}
+// - Family: [Spartan](https://fonts.google.com/specimen/Spartan)
+// - Weights: 400, 500, 700

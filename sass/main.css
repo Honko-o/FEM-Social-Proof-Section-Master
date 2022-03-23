@@ -1,0 +1,225 @@
+/*
+    Prefixer Mixin
+    Mixin to add Vendor Prefixes to CSS Properties
+*/
+/*
+    Overlay Mixin
+    Mixin To add Basic Overlay properties
+*/
+/* 
+    Flexbox Mixin
+    Mixin To Apply Flexbox Properties
+*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Spartan", sans-serif;
+}
+
+main {
+  position: relative;
+}
+main .svg-pattern-top-mobile,
+main .svg-pattern-top-computer {
+  position: absolute;
+  top: -5.3333333333rem;
+}
+main .svg-pattern-bottom-mobile,
+main .svg-pattern-bottom-computer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+@media (max-width: 990px) {
+  main .svg-pattern-top-computer,
+main .svg-pattern-bottom-computer {
+    display: none;
+  }
+}
+@media (min-width: 991px) {
+  main .svg-pattern-top-mobile {
+    display: none;
+  }
+}
+@media (min-width: 991px) {
+  main .svg-pattern-bottom-mobile {
+    display: none;
+  }
+}
+
+.social-proof-section {
+  margin-top: 5.3333333333rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+.social-proof-section .wrapper {
+  text-align: center;
+}
+@media (min-width: 991px) {
+  .social-proof-section .wrapper {
+    display: flex;
+  }
+}
+.social-proof-section .social-proof-header {
+  color: #502050;
+}
+@media (min-width: 991px) {
+  .social-proof-section .social-proof-header {
+    flex-basis: 40%;
+    text-align: left;
+  }
+}
+.social-proof-section .social-proof-title {
+  font-size: 2.3rem;
+}
+@media (min-width: 991px) {
+  .social-proof-section .social-proof-title {
+    font-size: 2.5rem;
+  }
+}
+.social-proof-section .social-proof-description {
+  color: #937b92;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.rate {
+  margin-top: 2.6666666667rem;
+  margin-bottom: 2.6666666667rem;
+  margin-right: 0;
+  margin-left: 0;
+}
+@media (min-width: 991px) {
+  .rate {
+    flex: 1;
+  }
+}
+.rate .rate-box {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  background-color: #f7f2f7;
+  padding: 1rem;
+  margin-bottom: 1.6666666667rem;
+  border-radius: 0.6666666667rem;
+}
+@media (min-width: 991px) {
+  .rate .rate-box {
+    max-width: 33.3333333333rem;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .rate .rate-box:first-of-type {
+    margin-left: 1.3333333333rem;
+  }
+  .rate .rate-box:nth-child(2) {
+    margin-left: 4.6666666667rem;
+  }
+  .rate .rate-box:last-of-type {
+    margin-left: 8rem;
+  }
+}
+.rate ul.stars {
+  width: 100%;
+  margin-bottom: 0.3333333333rem;
+  gap: 0.6666666667rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 991px) {
+  .rate ul.stars {
+    width: auto;
+    margin-bottom: 0;
+    align-items: center;
+  }
+}
+.rate p.rating-description {
+  width: 100%;
+  color: #502050;
+  font-weight: 900;
+}
+@media (min-width: 991px) {
+  .rate p.rating-description {
+    width: auto;
+  }
+}
+
+@media (min-width: 991px) {
+  .review {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 26.6666666667rem;
+  }
+}
+.review .review-box {
+  background-color: #502050;
+  padding: 2.1333333333rem;
+  margin-bottom: 1.3333333333rem;
+  border-radius: 0.6666666667rem;
+}
+@media (min-width: 991px) {
+  .review .review-box {
+    flex-basis: 31.6666666667%;
+    height: 258px;
+  }
+  .review .review-box:first-of-type {
+    margin-top: 1.3333333333rem;
+  }
+  .review .review-box:nth-child(2) {
+    margin-top: 2.6666666667rem;
+  }
+  .review .review-box:last-of-type {
+    margin-top: 4rem;
+  }
+}
+.review .review-header {
+  margin-bottom: 1.3333333333rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.review .review-header img {
+  border-radius: 50%;
+  width: 2.6666666667rem;
+  margin-right: 1.3333333333rem;
+}
+.review .review-header .buyer-name {
+  color: #f7f2f7;
+  margin-bottom: 0.3333333333rem;
+  font-weight: 500;
+}
+.review .review-header .buyer-tier {
+  color: rgba(238, 104, 164, 0.5);
+}
+.review .review-description {
+  color: #f7f2f7;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+/*# sourceMappingURL=main.css.map */
