@@ -2,6 +2,8 @@
 
 This is a solution to the [Social proof section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
+![Design preview for the Order summary card coding challenge](./design/desktop-preview.jpg)
+
 ### The challenge
 
 Users should be able to:
@@ -10,8 +12,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/Honko-o/FEM-Social-Proof-Section-Master)
+- Live Site URL: (https://honko-o.github.io/FEM-Social-Proof-Section-Master/)
 
 ## My process
 I started Building The Design on Phone it was normal and easy
